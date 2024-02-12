@@ -10,6 +10,7 @@ CREATE TABLE employees (
     position VARCHAR(255)
 );
 
+
 INSERT INTO employees (name, email, phone, position) 
 VALUES 
 ('Rahul Gupta', 'rahul.gupta@example.com', '9876543210', 'Senior Software Developer'),
