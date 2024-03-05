@@ -5,6 +5,14 @@ body {
     justify-content: center;
     background-color: var(--app-container);
   }
+  .login-heading {
+    font-family: "Lato", sans-serif;
+    font-size: 24px; 
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 20px;
+    text-align: center; 
+  }
 .form {
     display: flex;
     flex-direction: column;
