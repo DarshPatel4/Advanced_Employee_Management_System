@@ -119,7 +119,7 @@ button, a {
 .app-header-right button {
   margin-left: 10px;
 }
-.app-icon {
+/* .app-icon {
   width: 26px;
   height: 2px;
   border-radius: 4px;
@@ -141,7 +141,18 @@ button, a {
 }
 .app-icon:after {
   bottom: -6px;
+} */
+
+.app-icon {
+  display: inline-block;
+  width: 3cm;
+  height: 1cm;
+  background-image: url('logo.png');
+  background-size: contain; /* Adjusts the image to fit within the specified dimensions */
+  background-repeat: no-repeat; /* Ensures the image is not repeated */
+  margin-right: 5px; /* Optional: Adjust spacing between icon and app name */
 }
+
 .app-name {
   color: var(--main-color);
   margin: 0;
