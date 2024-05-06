@@ -1,0 +1,105 @@
+/* index.css */
+
+body {
+    font-family: "DM Sans", sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure the table is contained within the container */
+}
+
+.button {
+    background-color: #7380ec;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.button:hover {
+    background-color: #6c75d8;
+}
+
+.close-btn-div {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.close {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff; /* Close button text color */
+}
+
+.close span {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+.close span:before,
+.close span:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(90deg);
+}
+
+.alert {
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.alert .close {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.alert .close:hover {
+    color: #555;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}

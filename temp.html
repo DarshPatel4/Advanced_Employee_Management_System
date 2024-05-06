@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="button.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="success_style.css?v=<?php echo time(); ?>">
+</head>
+
+<body>
+
+<div class="close-btn-div">
+            <button class="button" onclick='window.location.href="Home.php";'>
+                <span class="X"></span>
+                <span class="Y"></span>
+                <div class="close"></div>
+            </button>
+</div>
+
+<div class='alert alert-success alert-dismissible fade show' role='alert'>
+            <strong>Success!</strong> Your user has been deleted successfully.
+            <button type='button' class='close' data-dismiss='alert' aria-label='Close' onclick='window.location.href=`index.php`;'>
+                <!-- <span aria-hidden='true'></span> -->
+            </button>
+        </div>
+
+
+<div class="container my4">
+    <table class="table" id="myTable">
+        <tbody>
+ <table border='1'>
+        <tr><th>EMP id</th><th>Name</th><th>Email</th><th>Phone</th><th>Joining Date</th><th>Gender</th><th>Age</th><th>Role</th><th>Salary</th></tr>
+<tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>       
+            </table>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

@@ -36,21 +36,30 @@ document.addEventListener('DOMContentLoaded', function () {
 const sidemenu=document.querySelector('aside')
 const menuBtn=document.querySelector('#menu_bar')
 const closeBtn=document.querySelector('#close_btn')
+ 
+var icon = document.getElementById("icon");
+var logo = document.getElementById("logo");
+icon.onclick = function () {
+  document.body.classList.toggle("dark-theme");
+  if(document.body.classList.contains( "dark-theme")){
+    icon.src="Assets/sun.png";
+    logo.src="Assets/darklogo.png";
+  }else{
+    icon.src="Assets/moon.png";
+    logo.src="Assets/logo.png";
+  }
+}
 
-const themeToggler=document.querySelector('.theme-toggler')
-menuBtn.addEventListener('click',()=>{
-  sidemenu.style.display="block"
-})
-closeBtn.addEventListener('click',()=>{
-  sidemenu.style.display="none"
-})
-themeToggler.addEventListener('click',()=>{
-  document.body.classList.toggle('dark-theme-variables')
-  themeToggler.querySelector('span:nth-child(i)').classList.toggle('active')
-  themeToggler.querySelector('span:nth-child(i)').classList.toggle('active')
 
-})
-
+// var icon = document.getElementById("icon");
+// icon.onclick = function () {
+//   document.body.classList.toggle("dark-theme");
+//   if(document.body.classList.contains( "dark-theme")){
+//     icon.src="Assets/sun.png";
+//   }else{
+//     icon.src="Assets/moon.png";
+//   }
+// }
 
 document.addEventListener("DOMContentLoaded", function() {
   var aboutUsLink = document.getElementById("about_us_link");
